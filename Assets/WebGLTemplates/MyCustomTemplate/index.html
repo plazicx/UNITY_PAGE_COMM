@@ -105,15 +105,17 @@
 
             // Send message to the Unity scene
             // Params: "Target object in the scene", "Function name", "Parameters"
-            var messagex = String(Math.random());
-              myGameInstance.SendMessage(
-                "[Bridge]",
-                "ReceiveMessageFromPage",
-                messagex
-                //message
-                
-              );
-            
+            for (var i=0;i<100;i++) {
+              //var messagex = String(Math.random());
+                console.log(i);
+                var messagex = String(i);
+                myGameInstance.SendMessage(
+                  "[Bridge]",
+                  "ReceiveMessageFromPage",
+                  messagex
+                  //message
+                );
+            }
             
          }
       

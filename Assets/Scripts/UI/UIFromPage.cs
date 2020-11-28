@@ -16,6 +16,6 @@ public class UIFromPage : MonoBehaviour
     public void DisplayMessage(string message)
     {
         // Assign the message
-        messageField.text = "SIPU RACKU " + message;
+        messageField.text = messageField.text + message;
     }
 }
